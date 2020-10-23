@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="concessionaria.MainController">
+   <VBox layoutX="235.0" layoutY="77.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <Label text="Scegli la Marca" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="72.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <left>
+            <ImageView fx:id="logoFiat" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#showFiatModels" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </left>
+         <center>
+            <ImageView fx:id="logoTesla" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#showTeslaModels" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </center>
+         <right>
+            <ImageView fx:id="logoBMW" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#showBMWModels" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <left>
+            <Label fx:id="family" onMouseClicked="#showFamily" text="Familiare" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Arial" size="37.0" />
+               </font>
+            </Label>
+         </left>
+         <center>
+            <Label fx:id="sport" onMouseClicked="#showSport" text="Sportiva" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Arial" size="37.0" />
+               </font>
+            </Label>
+         </center>
+         <right>
+            <Label fx:id="work" onMouseClicked="#showWork" text="Lavorativa" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Arial" size="34.0" />
+               </font>
+            </Label>
+         </right>
+      </BorderPane>
+   </VBox>
+</AnchorPane>
